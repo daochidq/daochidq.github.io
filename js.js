@@ -1,19 +1,30 @@
 var i = 0;
-var txt = 'Hi, I\'m Daoqi.\n' +
-    '                        A passionate and self-motivated Robotics Engineering graduate.' +
-    'I received my Master degree in Robotics from the University of Pennsylvania.' +
-    'I love buliding robots and enjoy programming the robots to make them automatic.'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var k =0;
+// var txt = 'Hi, I\'m Daoqi.\n' +
+//     '                        A passionate and self-motivated Robotics Engineering graduate.' +
+//     'I received my Master degree in Robotics from the University of Pennsylvania.' +
+//     'I love buliding robots and enjoy programming the robots to make them automatic.'; /* The text */
+var txt = 'Hi, I am Daoqi Zhang.'
+var txt2 = 'And I\'m a Software Engineer.'
+var speed = 80; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
     if (i < txt.length) {
-        document.getElementById('demo').innerHTML += txt.charAt(i);
+        document.getElementById('demo1').innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
     }
 }
 typeWriter()
 
+function typeWriter_1() {
+    if (k < txt2.length) {
+        document.getElementById('demo2').innerHTML += txt2.charAt(k);
+        k++;
+        setTimeout(typeWriter_1, speed);
+    }
+}
+typeWriter_1()
 // var app = document.getElementById('about');
 //
 // var typewriter = new Typewriter(app, {
